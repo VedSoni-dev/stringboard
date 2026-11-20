@@ -1,8 +1,8 @@
 // Shared types for the studio kit. Server and client both import this file, so it holds no secrets and no Node APIs.
 
 /** The ways a build can be powered. A build turns on the ones that make sense for it (studio.config.ts). */
-export type Mode = "local" | "chatgpt" | "claude" | "openai" | "publik";
-export const ALL_MODES: readonly Mode[] = ["local", "chatgpt", "claude", "openai", "publik"];
+export type Mode = "local" | "chatgpt" | "claude" | "openai" | "openrouter" | "publik";
+export const ALL_MODES: readonly Mode[] = ["local", "chatgpt", "claude", "openai", "openrouter", "publik"];
 
 /** How hard the model should work. Each provider maps it to its own knob (Claude: effort; publik: tier model). */
 export type Tier = "fast" | "balanced" | "smart";
@@ -41,6 +41,8 @@ export interface StudioConfig {
   claude?: { model?: string };
   /** Default OpenAI model; else the newest full model the person's key can use. */
   openai?: { model?: string };
+  /** Default OpenRouter model id; else the newest DeepSeek Flash. */
+  openrouter?: { model?: string };
   local?: { model?: string };
   chatgpt?: { model?: string };
 }
@@ -84,6 +86,7 @@ export const MODE_COPY: Record<Mode, { label: string; blurb: string }> = {
   chatgpt: { label: "ChatGPT plan", blurb: "Sign in with ChatGPT and use your Plus or Pro plan. No API key." },
   claude: { label: "Claude API key", blurb: "Paste your Anthropic key. It stays in an encrypted cookie on this browser." },
   openai: { label: "OpenAI API key", blurb: "Paste your OpenAI key. It stays in an encrypted cookie on this browser." },
+  openrouter: { label: "OpenRouter key", blurb: "DeepSeek, Qwen, Kimi and GLM through your OpenRouter key. Cents per answer. Kept in an encrypted cookie on this browser." },
   publik: { label: "publik", blurb: "Sign in with publik and use your publik plan. No key needed." },
 };
 

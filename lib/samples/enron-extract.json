@@ -1,0 +1,2051 @@
+{
+ "m01": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "David Delainey",
+    "kind": "person",
+    "aliases": [
+     "Delainey",
+     "Dave"
+    ],
+    "note": "Enron executive (ENA)",
+    "quote": "Regards\nDelainey"
+   },
+   {
+    "ref": "r2",
+    "name": "Mike Jakubik",
+    "kind": "person",
+    "aliases": [
+     "Mike"
+    ],
+    "note": "Enron Global Finance",
+    "quote": "Enron Global Finance"
+   },
+   {
+    "ref": "r3",
+    "name": "Raptor",
+    "kind": "thing",
+    "aliases": [
+     "raptor",
+     "Raptor vehicles"
+    ],
+    "note": "Off-balance-sheet vehicles used to hedge Enron's investments",
+    "quote": "raptor may be a good accounting hedge"
+   },
+   {
+    "ref": "r4",
+    "name": "JEDI",
+    "kind": "org",
+    "aliases": [
+     "JEDI II",
+     "JEDI I",
+     "Joint Energy Development Investments"
+    ],
+    "note": "Enron investment partnership",
+    "quote": "JEDI II investments"
+   },
+   {
+    "ref": "r5",
+    "name": "CALPERS",
+    "kind": "org",
+    "note": "California pension fund, Enron's partner in JEDI",
+    "quote": "any buyout price for CALPERS"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "questioned",
+    "quote": "How do we immunize ourselves from the workouts being shed into Raptor?"
+   },
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "called it an accounting hedge",
+    "quote": "raptor may be a good accounting hedge"
+   },
+   {
+    "a": "r2",
+    "b": "r3",
+    "label": "proposed reserving capacity in",
+    "quote": "We can see if we can reserve some Raptor capacity upfront"
+   },
+   {
+    "a": "r4",
+    "b": "r5",
+    "label": "being bought out from",
+    "quote": "any buyout price for CALPERS will reflect the state of the assets at closing"
+   }
+  ],
+  "events": [
+   {
+    "date": "2000-05-11",
+    "title": "Delainey asks how to stop bad deals being shed into Raptor",
+    "who": [
+     "r1",
+     "r2",
+     "r3"
+    ],
+    "quote": "How do we immunize ourselves from the workouts being shed into Raptor?"
+   }
+  ]
+ },
+ "m02": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Carol St. Clair",
+    "kind": "person",
+    "aliases": [
+     "Carol"
+    ],
+    "note": "Enron lawyer",
+    "quote": "have completed the Raptor II project"
+   },
+   {
+    "ref": "r2",
+    "name": "Raptor",
+    "kind": "thing",
+    "aliases": [
+     "Raptor II",
+     "Raptor I"
+    ],
+    "quote": "completed the Raptor II project"
+   },
+   {
+    "ref": "r3",
+    "name": "Project Margaux",
+    "kind": "thing",
+    "aliases": [
+     "Margaux"
+    ],
+    "note": "Quarter-end deal",
+    "quote": "a quarter end project called Project Margaux"
+   },
+   {
+    "ref": "r4",
+    "name": "Vinson & Elkins",
+    "kind": "org",
+    "aliases": [
+     "V&E"
+    ],
+    "note": "Enron's outside law firm",
+    "quote": "Alicia Curry at V&E"
+   },
+   {
+    "ref": "r5",
+    "name": "Alicia Curry",
+    "kind": "person",
+    "note": "Lawyer at Vinson & Elkins",
+    "quote": "Alicia Curry at V&E"
+   },
+   {
+    "ref": "r6",
+    "name": "Mark Evans",
+    "kind": "person",
+    "note": "Enron, London",
+    "quote": "coordinate with Mark Evans in London"
+   },
+   {
+    "ref": "r7",
+    "name": "London",
+    "kind": "place",
+    "quote": "Mark Evans in London"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r2",
+    "label": "closed",
+    "quote": "have completed the Raptor II project"
+   },
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "working on",
+    "quote": "We are in the process of completing a quarter end project called Project Margaux"
+   },
+   {
+    "a": "r5",
+    "b": "r4",
+    "label": "works at",
+    "quote": "Alicia Curry at V&E"
+   },
+   {
+    "a": "r4",
+    "b": "r2",
+    "label": "holds closing documents for",
+    "quote": "I will leav a message with Alicia Curry at V&E to send you the closing sets"
+   },
+   {
+    "a": "r6",
+    "b": "r7",
+    "label": "based in",
+    "quote": "coordinate with Mark Evans in London"
+   }
+  ],
+  "events": [
+   {
+    "date": "2000-07-07",
+    "title": "Raptor II closes; Project Margaux in progress for quarter end",
+    "who": [
+     "r1",
+     "r2",
+     "r3"
+    ],
+    "quote": "have completed the Raptor II project"
+   }
+  ]
+ },
+ "m03": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Gordon McKillop",
+    "kind": "person",
+    "aliases": [
+     "Gordon",
+     "McKillup"
+    ],
+    "note": "Runs the Raptor swap paperwork",
+    "quote": "Thanks,\nGordon"
+   },
+   {
+    "ref": "r2",
+    "name": "Talon",
+    "kind": "thing",
+    "note": "One of the Raptor vehicles",
+    "quote": "Talon will not accept any documentation after this date"
+   },
+   {
+    "ref": "r3",
+    "name": "Raptor",
+    "kind": "thing",
+    "quote": "documentation for the Raptor swaps and confirmations"
+   },
+   {
+    "ref": "r4",
+    "name": "Chewco",
+    "kind": "org",
+    "aliases": [
+     "Chewco SLP",
+     "CHEWCO",
+     "Chewco Investments",
+     "Chewco Investments L.P."
+    ],
+    "note": "Partnership that bought into JEDI",
+    "quote": "Merlin Credit Derivative and Chewco SLP"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "chasing paperwork for",
+    "quote": "all the documentation for the Raptor swaps and confirmations needs to be completed and finalized by next week"
+   },
+   {
+    "a": "r2",
+    "b": "r3",
+    "label": "part of",
+    "quote": "Talon will not accept any documentation after this date"
+   },
+   {
+    "a": "r4",
+    "b": "r3",
+    "label": "unvalued asset in",
+    "quote": "We are missing 4 valuations; Amerada Hess, LSI Preferred (We have the warrants), Merlin Credit Derivative and Chewco SLP"
+   }
+  ],
+  "events": [
+   {
+    "date": "2000-09-18",
+    "title": "Raptor swaps due to Talon; 24 of 31 private deals still lack paperwork",
+    "who": [
+     "r1",
+     "r2",
+     "r3"
+    ],
+    "quote": "Of the 31 privates plus Chewco SLP, we have proposal sheets and confirms for only 7"
+   }
+  ]
+ },
+ "m04": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Mary Cook",
+    "kind": "person",
+    "aliases": [
+     "Mary"
+    ],
+    "note": "Enron North America lawyer on the Raptor swap team",
+    "quote": "Enron North America Corp.\nMary Cook"
+   },
+   {
+    "ref": "r2",
+    "name": "Chewco",
+    "kind": "org",
+    "aliases": [
+     "Chewco Investments"
+    ],
+    "quote": "Chewco Investments purchased a position in JEDI I"
+   },
+   {
+    "ref": "r3",
+    "name": "JEDI",
+    "kind": "org",
+    "aliases": [
+     "JEDI I"
+    ],
+    "quote": "Chewco Investments purchased a position in JEDI I"
+   },
+   {
+    "ref": "r4",
+    "name": "Enron",
+    "kind": "org",
+    "aliases": [
+     "Enron Corp.",
+     "ENE"
+    ],
+    "quote": "Chewco is owned in part by an Enron entity"
+   },
+   {
+    "ref": "r5",
+    "name": "Andrea Reed",
+    "kind": "person",
+    "aliases": [
+     "Andrea V Reed"
+    ],
+    "quote": "I have been advised by Andrea Reed"
+   },
+   {
+    "ref": "r6",
+    "name": "96.12% of JEDI I",
+    "kind": "money",
+    "note": "Enron's combined stake in JEDI I via Chewco",
+    "quote": "Enron entities now have a 96.12% interest in JEDI I",
+    "aliases": [
+     "96.12%",
+     "96.12% interest"
+    ]
+   },
+   {
+    "ref": "r7",
+    "name": "Houston",
+    "kind": "place",
+    "quote": "Houston, Texas"
+   }
+  ],
+  "links": [
+   {
+    "a": "r2",
+    "b": "r3",
+    "label": "bought into",
+    "quote": "Chewco Investments purchased a position in JEDI I"
+   },
+   {
+    "a": "r4",
+    "b": "r2",
+    "label": "part-owns",
+    "quote": "Chewco is owned in part by an Enron entity"
+   },
+   {
+    "a": "r4",
+    "b": "r3",
+    "label": "controls 96.12% of",
+    "quote": "Enron entities now have a 96.12% interest in JEDI I"
+   },
+   {
+    "a": "r4",
+    "b": "r6",
+    "label": "holds",
+    "quote": "Enron entities now have a 96.12% interest in JEDI I"
+   },
+   {
+    "a": "r5",
+    "b": "r1",
+    "label": "told",
+    "quote": "I have been advised by Andrea Reed that Chewco Investments purchased a position"
+   },
+   {
+    "a": "r1",
+    "b": "r7",
+    "label": "based in",
+    "quote": "Houston, Texas"
+   }
+  ],
+  "events": [
+   {
+    "date": "2000-09-20",
+    "title": "Chewco's purchase puts Enron at 96.12% of JEDI I",
+    "who": [
+     "r2",
+     "r3",
+     "r4"
+    ],
+    "quote": "Enron entities now have a 96.12% interest in JEDI I"
+   }
+  ]
+ },
+ "m05": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Carol St. Clair",
+    "kind": "person",
+    "quote": "Carol St. Clair"
+   },
+   {
+    "ref": "r2",
+    "name": "Chewco",
+    "kind": "org",
+    "aliases": [
+     "CHEWCO"
+    ],
+    "quote": "the folks that know the most about CHEWCO"
+   },
+   {
+    "ref": "r3",
+    "name": "Trina Chandler",
+    "kind": "person",
+    "note": "Vinson & Elkins",
+    "quote": "Trina Chandler at V&E"
+   },
+   {
+    "ref": "r4",
+    "name": "Anne Yaeger",
+    "kind": "person",
+    "aliases": [
+     "Anne Yeager"
+    ],
+    "note": "Enron",
+    "quote": "Anne Yaeger - Enron"
+   },
+   {
+    "ref": "r5",
+    "name": "Scott Sefton",
+    "kind": "person",
+    "aliases": [
+     "Sefton"
+    ],
+    "note": "Enron",
+    "quote": "Scott Sefton - Enron"
+   },
+   {
+    "ref": "r6",
+    "name": "Vinson & Elkins",
+    "kind": "org",
+    "aliases": [
+     "V&E"
+    ],
+    "quote": "Trina Chandler at V&E"
+   }
+  ],
+  "links": [
+   {
+    "a": "r3",
+    "b": "r6",
+    "label": "works at",
+    "quote": "Trina Chandler at V&E"
+   },
+   {
+    "a": "r3",
+    "b": "r2",
+    "label": "knows most about",
+    "quote": "Here are the folks that know the most about CHEWCO"
+   },
+   {
+    "a": "r4",
+    "b": "r2",
+    "label": "knows most about",
+    "quote": "Here are the folks that know the most about CHEWCO"
+   },
+   {
+    "a": "r5",
+    "b": "r2",
+    "label": "knows most about",
+    "quote": "Here are the folks that know the most about CHEWCO"
+   }
+  ],
+  "events": []
+ },
+ "m06": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Mary Cook",
+    "kind": "person",
+    "quote": "Sara Shackleton and I are the primary swap team"
+   },
+   {
+    "ref": "r2",
+    "name": "Sara Shackleton",
+    "kind": "person",
+    "aliases": [
+     "Sara"
+    ],
+    "note": "Enron lawyer on the Raptor swap team",
+    "quote": "Sara Shackleton and I are the primary swap team"
+   },
+   {
+    "ref": "r3",
+    "name": "Raptor",
+    "kind": "thing",
+    "aliases": [
+     "Raptor 1",
+     "Raptor 2",
+     "Raptor 3"
+    ],
+    "quote": "swaps to be placed into the Raptor structures"
+   },
+   {
+    "ref": "r4",
+    "name": "Jordan Mintz",
+    "kind": "person",
+    "note": "Enron lawyer",
+    "quote": "I would request that either you, or another attorney who will assist in the future, or both, attend",
+    "aliases": [
+     "jordan.mintz@enron.com"
+    ]
+   },
+   {
+    "ref": "r5",
+    "name": "Scott Sefton",
+    "kind": "person",
+    "aliases": [
+     "Sefton"
+    ],
+    "quote": "We have previously worked with Sefton and Chin"
+   },
+   {
+    "ref": "r6",
+    "name": "Julia Chin",
+    "kind": "person",
+    "aliases": [
+     "Chin",
+     "Julia H Chin"
+    ],
+    "quote": "We have retained Julia Chin on the working group list"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "builds swaps for",
+    "quote": "the primary swap team assigned to the preparation of swaps to be placed into the Raptor structures"
+   },
+   {
+    "a": "r2",
+    "b": "r3",
+    "label": "builds swaps for",
+    "quote": "Sara Shackleton and I are the primary swap team"
+   },
+   {
+    "a": "r1",
+    "b": "r4",
+    "label": "asked to attend",
+    "quote": "I would request that either you, or another attorney who will assist in the future, or both, attend"
+   },
+   {
+    "a": "r1",
+    "b": "r5",
+    "label": "worked with",
+    "quote": "We have previously worked with Sefton and Chin"
+   }
+  ],
+  "events": []
+ },
+ "m07": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Andrew Fastow",
+    "kind": "person",
+    "aliases": [
+     "Andy",
+     "Andy Fastow",
+     "Fastow, Andrew S.",
+     "Fastow, Andrew"
+    ],
+    "note": "Enron CFO; ran the LJM partnerships",
+    "quote": "Andy - Mark Metts called tonight"
+   },
+   {
+    "ref": "r2",
+    "name": "Jeff Skilling",
+    "kind": "person",
+    "aliases": [
+     "Jeff",
+     "Jeffrey Skilling"
+    ],
+    "note": "Enron CEO until Aug 2001",
+    "quote": "Jeff:"
+   },
+   {
+    "ref": "r3",
+    "name": "LJM",
+    "kind": "org",
+    "aliases": [
+     "LJM Deal"
+    ],
+    "note": "Partnerships controlled by Fastow that did deals with Enron",
+    "quote": "it looks like LJM is being put at a disadvantage"
+   },
+   {
+    "ref": "r4",
+    "name": "UBS Capital",
+    "kind": "org",
+    "note": "Rival bidder",
+    "quote": "UBS Capital has spent innumerable hours with management"
+   },
+   {
+    "ref": "r5",
+    "name": "Mark Metts",
+    "kind": "person",
+    "note": "Enron executive",
+    "quote": "Mark Metts called tonight"
+   },
+   {
+    "ref": "r6",
+    "name": "Adam Umanoff",
+    "kind": "person",
+    "aliases": [
+     "Umanoff, Adam"
+    ],
+    "note": "Runs EWC",
+    "quote": "From: \tUmanoff, Adam"
+   },
+   {
+    "ref": "r7",
+    "name": "EWC",
+    "kind": "thing",
+    "note": "Enron business up for sale",
+    "quote": "other bidders for EWC"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r2",
+    "label": "complained to",
+    "quote": "it looks like LJM is being put at a disadvantage"
+   },
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "runs",
+    "quote": "more favorable treatment of you (LJM) as opposed to other bidders"
+   },
+   {
+    "a": "r3",
+    "b": "r7",
+    "label": "bidding for",
+    "quote": "more favorable treatment of you (LJM) as opposed to other bidders for EWC"
+   },
+   {
+    "a": "r4",
+    "b": "r7",
+    "label": "rival bidder for",
+    "quote": "UBS Capital has spent innumerable hours with management"
+   },
+   {
+    "a": "r5",
+    "b": "r6",
+    "label": "blocked meeting with Fastow",
+    "quote": "Mark Metts called tonight and has asked me not to meet with you in Houston tomorrow"
+   },
+   {
+    "a": "r6",
+    "b": "r3",
+    "label": "wants financing from",
+    "quote": "while I am very interested in an LJM financed MBO"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-04-16",
+    "title": "Fastow (Enron's CFO) pushes Skilling on his own LJM's bid for an Enron business",
+    "who": [
+     "r1",
+     "r2",
+     "r3",
+     "r7"
+    ],
+    "quote": "it looks like LJM is being put at a disadvantage"
+   }
+  ]
+ },
+ "m08": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Andrew Fastow",
+    "kind": "person",
+    "aliases": [
+     "Andy Fastow",
+     "Fastow, Andrew"
+    ],
+    "quote": "Andy Fastow\nEVP/CFO, ENRON"
+   },
+   {
+    "ref": "r2",
+    "name": "LJM2",
+    "kind": "org",
+    "aliases": [
+     "LJM2 Co-Investment, L.P.",
+     "LJM2 Co-Investment"
+    ],
+    "note": "Fastow's second LJM partnership",
+    "quote": "LJM2 Co-Investment, L.P. (\"LJM2\")"
+   },
+   {
+    "ref": "r3",
+    "name": "Enron",
+    "kind": "org",
+    "aliases": [
+     "ENRON"
+    ],
+    "quote": "EVP/CFO, ENRON"
+   },
+   {
+    "ref": "r4",
+    "name": "Bridget Maronge",
+    "kind": "person",
+    "aliases": [
+     "Maronge, Bridget"
+    ],
+    "note": "Fastow's office",
+    "quote": "From: \tMaronge, Bridget"
+   },
+   {
+    "ref": "r5",
+    "name": "Sara Davidson",
+    "kind": "person",
+    "aliases": [
+     "Davidson, Sara"
+    ],
+    "quote": "Andy Fastow's office has requested that I forward to all Enron attorneys"
+   },
+   {
+    "ref": "r6",
+    "name": "Kenneth Lay",
+    "kind": "person",
+    "aliases": [
+     "Lay, Kenneth",
+     "Ken Lay",
+     "Lay"
+    ],
+    "note": "Enron chairman",
+    "quote": "Lay, Kenneth"
+   },
+   {
+    "ref": "r7",
+    "name": "LJM",
+    "kind": "org",
+    "quote": "Private Equity Transactions and LJM2"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "CFO of",
+    "quote": "Andy Fastow\nEVP/CFO, ENRON"
+   },
+   {
+    "a": "r1",
+    "b": "r2",
+    "label": "declared not a related party",
+    "quote": "is no longer a \"related party\" for purposes of disclosure in Enron's proxy and financial statements"
+   },
+   {
+    "a": "r2",
+    "b": "r7",
+    "label": "part of",
+    "quote": "Private Equity Transactions and LJM2 (From A Fastow)"
+   },
+   {
+    "a": "r4",
+    "b": "r6",
+    "label": "sent Fastow's notice to",
+    "quote": "Koenig, Mark; Lavorato, John; Lay, Kenneth"
+   },
+   {
+    "a": "r5",
+    "b": "r1",
+    "label": "forwarded for",
+    "quote": "Andy Fastow's office has requested that I forward to all Enron attorneys"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-08-02",
+    "title": "Fastow tells Enron's lawyers his LJM2 is no longer a 'related party'",
+    "who": [
+     "r1",
+     "r2",
+     "r3"
+    ],
+    "quote": "is no longer a \"related party\" for purposes of disclosure"
+   }
+  ]
+ },
+ "m09": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Vince Kaminski",
+    "kind": "person",
+    "aliases": [
+     "Vince",
+     "Kaminski, Vince J",
+     "Vince J Kaminski",
+     "J. Kaminski",
+     "j.kaminski@enron.com"
+    ],
+    "note": "Head of Enron's research (risk modelling) group",
+    "quote": "I would expect a cash event related to the exercise of the put"
+   },
+   {
+    "ref": "r2",
+    "name": "Rudi Zipter",
+    "kind": "person",
+    "aliases": [
+     "Rudi",
+     "Zipter, Rudi"
+    ],
+    "note": "Enron risk group; now in London",
+    "quote": "From: \tZipter, Rudi"
+   },
+   {
+    "ref": "r3",
+    "name": "Cassandra Schultz",
+    "kind": "person",
+    "aliases": [
+     "Cassandra",
+     "Schultz, Cassandra"
+    ],
+    "note": "Enron risk group",
+    "quote": "Vince - please rope me into this meeting"
+   },
+   {
+    "ref": "r4",
+    "name": "Raptor",
+    "kind": "thing",
+    "quote": "how the various Raptor portfolios are postured"
+   },
+   {
+    "ref": "r5",
+    "name": "Enron stock (ENE)",
+    "kind": "thing",
+    "aliases": [
+     "ENE",
+     "ENE stock"
+    ],
+    "note": "Enron shares, the collateral inside Raptor",
+    "quote": "As ENE stock and the stock market in general has been hammered lately"
+   },
+   {
+    "ref": "r6",
+    "name": "Avici",
+    "kind": "org",
+    "aliases": [
+     "AVICI"
+    ],
+    "note": "Tech stock held in Raptor",
+    "quote": "for the public equities such as AVICI this is simply not the case"
+   },
+   {
+    "ref": "r7",
+    "name": "Enron",
+    "kind": "org",
+    "quote": "will affect Enron's\nliquidity at some point"
+   },
+   {
+    "ref": "r8",
+    "name": "Gordon McKillop",
+    "kind": "person",
+    "aliases": [
+     "Gordon McKillup"
+    ],
+    "quote": "call Gordon McKillup"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r7",
+    "label": "warned of cash hit to",
+    "quote": "I would expect a cash event related to the exercise of the put that will affect Enron's\nliquidity at some point"
+   },
+   {
+    "a": "r2",
+    "b": "r4",
+    "label": "raised alarm about",
+    "quote": "perhaps it is a good time to call Gordon McKillup and determine how the various Raptor portfolios are postured"
+   },
+   {
+    "a": "r4",
+    "b": "r5",
+    "label": "collateralised by",
+    "quote": "they placed a option collar around the collateral (ENE stock)"
+   },
+   {
+    "a": "r4",
+    "b": "r6",
+    "label": "held",
+    "quote": "for the public equities such as AVICI this is simply not the case"
+   },
+   {
+    "a": "r3",
+    "b": "r1",
+    "label": "asked to join meeting",
+    "quote": "Vince - please rope me into this meeting"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-08-22",
+    "title": "Kaminski expects a cash event that will hit Enron's liquidity",
+    "who": [
+     "r1",
+     "r4",
+     "r7"
+    ],
+    "quote": "I would expect a cash event related to the exercise of the put that will affect Enron's"
+   }
+  ]
+ },
+ "m10": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Ding Yuan",
+    "kind": "person",
+    "aliases": [
+     "Ding",
+     "Yuan, Ding"
+    ],
+    "note": "Enron research group",
+    "quote": "From: \tYuan, Ding"
+   },
+   {
+    "ref": "r2",
+    "name": "Vince Kaminski",
+    "kind": "person",
+    "aliases": [
+     "Kaminski, Vince J"
+    ],
+    "quote": "To:\tKaminski, Vince J"
+   },
+   {
+    "ref": "r3",
+    "name": "Gordon McKillop",
+    "kind": "person",
+    "aliases": [
+     "Gordon"
+    ],
+    "quote": "I have talked with Gordon regarding to the impact of current Enron stock price on the Raptor structure"
+   },
+   {
+    "ref": "r4",
+    "name": "Raptor",
+    "kind": "thing",
+    "aliases": [
+     "Raptor I",
+     "Raptor II",
+     "Raptor IV",
+     "Raptors"
+    ],
+    "quote": "Current value of assets remain in Raptors are $141.8 MM"
+   },
+   {
+    "ref": "r5",
+    "name": "$733.68 MM",
+    "kind": "money",
+    "note": "Raptor's swapped assets at the start",
+    "quote": "The notional value of all the swapped assets at the time of Raptor inception was $733.68 MM"
+   },
+   {
+    "ref": "r6",
+    "name": "$141.8 MM",
+    "kind": "money",
+    "note": "What was left in Raptor, Aug 2001",
+    "quote": "Current value of assets remain in Raptors are $141.8 MM"
+   },
+   {
+    "ref": "r7",
+    "name": "Enron stock (ENE)",
+    "kind": "thing",
+    "aliases": [
+     "ENE"
+    ],
+    "quote": "Raptor hedged ENE credit capacity all the way down to ENE $20/share"
+   },
+   {
+    "ref": "r8",
+    "name": "Cassandra Schultz",
+    "kind": "person",
+    "aliases": [
+     "Cassandra"
+    ],
+    "quote": "Cassandra asked me to forward this note to you"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r2",
+    "label": "briefed",
+    "quote": "Cassandra asked me to forward this note to you, hope it is of some help"
+   },
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "interviewed",
+    "quote": "I have talked with Gordon regarding to the impact of current Enron stock price on the Raptor structure"
+   },
+   {
+    "a": "r4",
+    "b": "r5",
+    "label": "started with",
+    "quote": "The notional value of all the swapped assets at the time of Raptor inception was $733.68 MM"
+   },
+   {
+    "a": "r4",
+    "b": "r6",
+    "label": "down to",
+    "quote": "Current value of assets remain in Raptors are $141.8 MM"
+   },
+   {
+    "a": "r4",
+    "b": "r7",
+    "label": "only holds up while ENE is above $20",
+    "quote": "Raptor hedged ENE credit capacity all the way down to ENE $20/share"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-08-23",
+    "title": "Raptor's assets have fallen from $733.68M to $141.8M",
+    "who": [
+     "r4",
+     "r1",
+     "r3"
+    ],
+    "quote": "Current value of assets remain in Raptors are $141.8 MM"
+   }
+  ]
+ },
+ "m11": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Mark Palmer",
+    "kind": "person",
+    "aliases": [
+     "Palmer",
+     "Palmer, Mark A. (PR)",
+     "Mark"
+    ],
+    "note": "Enron PR",
+    "quote": "Palmer, Mark A. (PR)"
+   },
+   {
+    "ref": "r2",
+    "name": "James Derrick",
+    "kind": "person",
+    "aliases": [
+     "Jim",
+     "Derrick Jr., James",
+     "Jim Derrick"
+    ],
+    "note": "Enron general counsel",
+    "quote": "Mark, I've left you a voice mail regarding this matter.  Jim"
+   },
+   {
+    "ref": "r3",
+    "name": "Wall Street Journal",
+    "kind": "org",
+    "aliases": [
+     "WSJ"
+    ],
+    "quote": "the LJM statement to the Wall Street Journal"
+   },
+   {
+    "ref": "r4",
+    "name": "LJM",
+    "kind": "org",
+    "quote": "a draft of the LJM statement"
+   },
+   {
+    "ref": "r5",
+    "name": "Kenneth Lay",
+    "kind": "person",
+    "aliases": [
+     "Lay, Kenneth"
+    ],
+    "quote": "To:\tLay, Kenneth"
+   },
+   {
+    "ref": "r6",
+    "name": "Andrew Fastow",
+    "kind": "person",
+    "aliases": [
+     "Fastow, Andrew"
+    ],
+    "quote": "Kean, Steven J.; Fastow, Andrew"
+   },
+   {
+    "ref": "r7",
+    "name": "Greg Whalley",
+    "kind": "person",
+    "aliases": [
+     "Whalley, Greg"
+    ],
+    "note": "Enron president",
+    "quote": "Whalley, Greg"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "drafted a statement for",
+    "quote": "I've attached a draft of the LJM statement to the Wall Street Journal"
+   },
+   {
+    "a": "r1",
+    "b": "r5",
+    "label": "asked for sign-off",
+    "quote": "To:\tLay, Kenneth; Whalley, Greg"
+   },
+   {
+    "a": "r1",
+    "b": "r6",
+    "label": "asked for sign-off",
+    "quote": "Kean, Steven J.; Fastow, Andrew"
+   },
+   {
+    "a": "r2",
+    "b": "r1",
+    "label": "replied off the record",
+    "quote": "I've left you a voice mail regarding this matter"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-09-27",
+    "title": "Enron PR drafts an LJM statement for the Wall Street Journal",
+    "who": [
+     "r1",
+     "r3",
+     "r4",
+     "r5",
+     "r6"
+    ],
+    "quote": "I propose releasing the statement to the reporters tomorrow afternoon"
+   }
+  ]
+ },
+ "m12": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Rick Buy",
+    "kind": "person",
+    "aliases": [
+     "Buy, Rick",
+     "Rick"
+    ],
+    "note": "Enron chief risk officer",
+    "quote": "Now that Raptor is blown up"
+   },
+   {
+    "ref": "r2",
+    "name": "Richard Causey",
+    "kind": "person",
+    "aliases": [
+     "Causey, Richard"
+    ],
+    "note": "Enron chief accounting officer",
+    "quote": "From: \tBuy, Rick"
+   },
+   {
+    "ref": "r3",
+    "name": "Ben Glisan",
+    "kind": "person",
+    "aliases": [
+     "Glisan, Ben",
+     "Ben"
+    ],
+    "note": "Enron treasurer",
+    "quote": "To:\tCausey, Richard; Glisan, Ben"
+   },
+   {
+    "ref": "r4",
+    "name": "Raptor",
+    "kind": "thing",
+    "quote": "Now that Raptor is blown up"
+   },
+   {
+    "ref": "r5",
+    "name": "Ron Baker",
+    "kind": "person",
+    "aliases": [
+     "Ron"
+    ],
+    "quote": "Ron, will you take the lead"
+   },
+   {
+    "ref": "r6",
+    "name": "David Gorte",
+    "kind": "person",
+    "aliases": [
+     "Gorte, David",
+     "Dave Gorte",
+     "Gorte"
+    ],
+    "quote": "Cc:\tGorte, David"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r4",
+    "label": "said was blown up",
+    "quote": "Now that Raptor is blown up"
+   },
+   {
+    "a": "r1",
+    "b": "r2",
+    "label": "asked what's left",
+    "quote": "I am not familiar with details of how it unwound so I don't know what we are left with"
+   },
+   {
+    "a": "r2",
+    "b": "r5",
+    "label": "handed clean-up to",
+    "quote": "Ron, will you take the lead in making sure we have a smooth transition on this?"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-10-03",
+    "title": "Chief risk officer: 'Raptor is blown up'",
+    "who": [
+     "r1",
+     "r2",
+     "r3",
+     "r4"
+    ],
+    "quote": "Now that Raptor is blown up, should we begin valuation efforts of assets"
+   }
+  ]
+ },
+ "m13": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Ben Glisan",
+    "kind": "person",
+    "aliases": [
+     "Ben"
+    ],
+    "quote": "Please work with RAC (Dave Gorte)"
+   },
+   {
+    "ref": "r2",
+    "name": "David Gorte",
+    "kind": "person",
+    "aliases": [
+     "Dave Gorte"
+    ],
+    "quote": "RAC (Dave Gorte)"
+   },
+   {
+    "ref": "r3",
+    "name": "RAC",
+    "kind": "org",
+    "note": "Enron Risk Assessment and Control",
+    "quote": "Please work with RAC (Dave Gorte)"
+   },
+   {
+    "ref": "r4",
+    "name": "Raptor",
+    "kind": "thing",
+    "quote": "all of the Raptor Investments are being monitored"
+   },
+   {
+    "ref": "r5",
+    "name": "Gordon McKillop",
+    "kind": "person",
+    "aliases": [
+     "Gordon"
+    ],
+    "quote": "George & Gordon"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r4",
+    "label": "ordered monitoring of",
+    "quote": "ensure that all of the Raptor Investments are being monitored"
+   },
+   {
+    "a": "r2",
+    "b": "r3",
+    "label": "runs",
+    "quote": "RAC (Dave Gorte)"
+   },
+   {
+    "a": "r1",
+    "b": "r5",
+    "label": "tasked",
+    "quote": "George & Gordon\n\nPlease work with RAC"
+   }
+  ],
+  "events": []
+ },
+ "m14": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "David Port",
+    "kind": "person",
+    "aliases": [
+     "Port, David"
+    ],
+    "note": "Enron risk",
+    "quote": "From: \tPort, David"
+   },
+   {
+    "ref": "r2",
+    "name": "Rick Buy",
+    "kind": "person",
+    "aliases": [
+     "rick"
+    ],
+    "quote": "lets discuss need gorte as well. rick"
+   },
+   {
+    "ref": "r3",
+    "name": "Audit & Finance Committee",
+    "kind": "org",
+    "aliases": [
+     "A&F Comm"
+    ],
+    "note": "Enron board committee",
+    "quote": "my take-aways from the A&F Comm meetings"
+   },
+   {
+    "ref": "r4",
+    "name": "Raptor",
+    "kind": "thing",
+    "quote": "\"lessons learned\" session on Raptor"
+   }
+  ],
+  "links": [
+   {
+    "a": "r3",
+    "b": "r4",
+    "label": "asked for a post-mortem on",
+    "quote": "Blake's request for a \"lessons learned\" session on Raptor"
+   },
+   {
+    "a": "r1",
+    "b": "r2",
+    "label": "proposed post-mortem to",
+    "quote": "Should we put something together?"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-10-10",
+    "title": "Board committee wants a 'lessons learned' session on Raptor",
+    "who": [
+     "r1",
+     "r2",
+     "r3",
+     "r4"
+    ],
+    "quote": "Blake's request for a \"lessons learned\" session on Raptor"
+   }
+  ]
+ },
+ "m15": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Sherron Watkins",
+    "kind": "person",
+    "aliases": [
+     "Sherron S. Watkins",
+     "Sherron Smith Watkins"
+    ],
+    "note": "Enron VP who warned Lay",
+    "quote": "Sherron S. Watkins\nVice President, Enron Corp."
+   },
+   {
+    "ref": "r2",
+    "name": "Kenneth Lay",
+    "kind": "person",
+    "aliases": [
+     "Lay"
+    ],
+    "quote": "the page I reviewed with Lay on 8/22"
+   },
+   {
+    "ref": "r3",
+    "name": "Enron",
+    "kind": "org",
+    "aliases": [
+     "Enron Corp."
+    ],
+    "quote": "Vice President, Enron Corp."
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r2",
+    "label": "warned in person",
+    "date": "2001-08-22",
+    "quote": "this is the page I reviewed with Lay on 8/22"
+   },
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "vice president at",
+    "quote": "Vice President, Enron Corp."
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-08-22",
+    "title": "Watkins walks Ken Lay through her key questions",
+    "who": [
+     "r1",
+     "r2"
+    ],
+    "quote": "this is the page I reviewed with Lay on 8/22"
+   }
+  ]
+ },
+ "m16": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Enron",
+    "kind": "org",
+    "quote": "we will now return to our normal electronic document retention policy"
+   },
+   {
+    "ref": "r2",
+    "name": "LJM",
+    "kind": "org",
+    "aliases": [
+     "LJM Deal",
+     "LJM Cayman L.P.",
+     "LJM Co-Investment L.P."
+    ],
+    "quote": "relate in any way to the LJM Deal or Chewco Investments L.P."
+   },
+   {
+    "ref": "r3",
+    "name": "Chewco",
+    "kind": "org",
+    "aliases": [
+     "Chewco Investments L.P."
+    ],
+    "quote": "relate in any way to the LJM Deal or Chewco Investments L.P."
+   },
+   {
+    "ref": "r4",
+    "name": "Raptor",
+    "kind": "thing",
+    "aliases": [
+     "Raptor 1",
+     "Raptor 2",
+     "Raptor 3",
+     "Raptor 4"
+    ],
+    "quote": "Raptor 1, Raptor 1a, Raptor 2, Raptor 2a, Raptor 3, Raptor 4"
+   },
+   {
+    "ref": "r5",
+    "name": "Avici",
+    "kind": "org",
+    "quote": "Osprey1, Avici, Catalytica"
+   },
+   {
+    "ref": "r6",
+    "name": "New Power Co.",
+    "kind": "org",
+    "aliases": [
+     "New Power Company"
+    ],
+    "quote": "EBS, Azurix, New Power Co."
+   },
+   {
+    "ref": "r7",
+    "name": "Azurix",
+    "kind": "org",
+    "quote": "EBS, Azurix, New Power Co."
+   },
+   {
+    "ref": "r8",
+    "name": "EBS",
+    "kind": "org",
+    "aliases": [
+     "Enron Broadband Services"
+    ],
+    "quote": "EBS, Azurix, New Power Co."
+   },
+   {
+    "ref": "r9",
+    "name": "Andrew Edison",
+    "kind": "person",
+    "note": "Enron lawyer, litigation contact",
+    "quote": "please call Andrew Edison"
+   },
+   {
+    "ref": "r10",
+    "name": "Osprey",
+    "kind": "thing",
+    "aliases": [
+     "Osprey1",
+     "Osprey 2 LLC1"
+    ],
+    "quote": "Osprey1, Avici, Catalytica"
+   }
+  ],
+  "links": [
+   {
+    "a": "r4",
+    "b": "r2",
+    "label": "part of the LJM deal",
+    "quote": "Raptor 1, Raptor 1a, Raptor 2, Raptor 2a, Raptor 3, Raptor 4"
+   },
+   {
+    "a": "r5",
+    "b": "r2",
+    "label": "part of the LJM deal",
+    "quote": "Osprey1, Avici, Catalytica"
+   },
+   {
+    "a": "r10",
+    "b": "r2",
+    "label": "part of the LJM deal",
+    "quote": "Osprey1, Avici, Catalytica"
+   },
+   {
+    "a": "r1",
+    "b": "r2",
+    "label": "being sued over",
+    "quote": "relate in any way to the LJM Deal or Chewco Investments L.P., including any accounting issues related to these transactions"
+   },
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "being sued over",
+    "quote": "relate in any way to the LJM Deal or Chewco Investments L.P., including any accounting issues related to these transactions"
+   },
+   {
+    "a": "r1",
+    "b": "r6",
+    "label": "public statements under scrutiny",
+    "quote": "Enron's public statements regarding EBS, Azurix, New Power Co."
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-11-01",
+    "title": "Enron says it will go back to its normal document-deletion policy",
+    "who": [
+     "r1",
+     "r2",
+     "r3"
+    ],
+    "quote": "we will now return to our normal electronic document retention policy"
+   }
+  ]
+ },
+ "m17": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Vince Kaminski",
+    "kind": "person",
+    "aliases": [
+     "Kaminski, Vince J",
+     "Vince Kaminski"
+    ],
+    "quote": "Vince Kaminski"
+   },
+   {
+    "ref": "r2",
+    "name": "Ryan Siurek",
+    "kind": "person",
+    "aliases": [
+     "Siurek, Ryan",
+     "Ryan"
+    ],
+    "note": "Enron accounting",
+    "quote": "To:\tSiurek, Ryan"
+   },
+   {
+    "ref": "r3",
+    "name": "LJM",
+    "kind": "org",
+    "quote": "the LJM/Raptor related transactions"
+   },
+   {
+    "ref": "r4",
+    "name": "Raptor",
+    "kind": "thing",
+    "quote": "the LJM/Raptor related transactions"
+   },
+   {
+    "ref": "r5",
+    "name": "Rick Buy",
+    "kind": "person",
+    "aliases": [
+     "Buy, Rick"
+    ],
+    "quote": "Cc:\tKaminski, Vince J; Buy, Rick; Port, David"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r2",
+    "label": "refused to back valuations to",
+    "quote": "I cannot support the valuations my group has produced so far for the LJM/Raptor related transactions"
+   },
+   {
+    "a": "r1",
+    "b": "r4",
+    "label": "refused to vouch for",
+    "quote": "These transactions are too complex and controversial to bypass due diligence requirements"
+   },
+   {
+    "a": "r1",
+    "b": "r5",
+    "label": "copied on refusal",
+    "quote": "Cc:\tKaminski, Vince J; Buy, Rick; Port, David"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-10-04",
+    "title": "Kaminski refuses to stand behind the LJM/Raptor valuations",
+    "who": [
+     "r1",
+     "r2",
+     "r3",
+     "r4"
+    ],
+    "quote": "I cannot support the valuations my group has produced so far"
+   }
+  ]
+ },
+ "m18": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Kenneth Lay",
+    "kind": "person",
+    "aliases": [
+     "chairman.ken@enron.com",
+     "Chairman Ken"
+    ],
+    "note": "Enron chairman and CEO",
+    "quote": "Today we released additional information about our related party and off-balance sheet transactions"
+   },
+   {
+    "ref": "r2",
+    "name": "Enron",
+    "kind": "org",
+    "quote": "Enron will restate its financial statements from 1997 to 2000"
+   },
+   {
+    "ref": "r3",
+    "name": "SEC",
+    "kind": "org",
+    "aliases": [
+     "Securities and Exchange Commission"
+    ],
+    "note": "US securities regulator",
+    "quote": "a Form 8-K filing with the Securities and Exchange Commission (SEC)"
+   },
+   {
+    "ref": "r4",
+    "name": "$1.2 billion charge",
+    "kind": "money",
+    "note": "Charge to shareholders' equity, Q3 2001",
+    "quote": "the $1.2 billion charge to shareholders' equity"
+   },
+   {
+    "ref": "r5",
+    "name": "JEDI",
+    "kind": "org",
+    "aliases": [
+     "Joint Energy Development Investments"
+    ],
+    "quote": "Joint Energy Development Investments (JEDI) and Chewco"
+   },
+   {
+    "ref": "r6",
+    "name": "Chewco",
+    "kind": "org",
+    "quote": "Joint Energy Development Investments (JEDI) and Chewco"
+   },
+   {
+    "ref": "r7",
+    "name": "$711 million of hidden debt (1997)",
+    "kind": "money",
+    "note": "Debt added by consolidating JEDI and Chewco",
+    "quote": "will increase Enron's debt by approximately $711 million in 1997",
+    "aliases": [
+     "$711 million"
+    ]
+   },
+   {
+    "ref": "r8",
+    "name": "LJM",
+    "kind": "org",
+    "aliases": [
+     "LJM1"
+    ],
+    "quote": "the LJM limited partnerships"
+   }
+  ],
+  "links": [
+   {
+    "a": "r1",
+    "b": "r2",
+    "label": "announced restatement for",
+    "quote": "Today we released additional information about our related party and off-balance sheet transactions"
+   },
+   {
+    "a": "r2",
+    "b": "r3",
+    "label": "under investigation by",
+    "quote": "we will continue to cooperate fully with the SEC in its investigation"
+   },
+   {
+    "a": "r2",
+    "b": "r4",
+    "label": "took",
+    "quote": "the $1.2 billion charge to shareholders' equity announced in the third quarter"
+   },
+   {
+    "a": "r2",
+    "b": "r5",
+    "label": "should have consolidated",
+    "quote": "the retroactive consolidation of Joint Energy Development Investments (JEDI) and Chewco"
+   },
+   {
+    "a": "r2",
+    "b": "r6",
+    "label": "should have consolidated",
+    "quote": "the retroactive consolidation of Joint Energy Development Investments (JEDI) and Chewco"
+   },
+   {
+    "a": "r6",
+    "b": "r7",
+    "label": "hid",
+    "quote": "The consolidation of JEDI and Chewco also will increase Enron's debt by approximately $711 million in 1997"
+   },
+   {
+    "a": "r2",
+    "b": "r8",
+    "label": "should have consolidated",
+    "quote": "the consolidation of an LJM1 subsidiary for 1999 and 2000"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-11-08",
+    "title": "Enron restates four years of earnings and consolidates JEDI and Chewco",
+    "who": [
+     "r1",
+     "r2",
+     "r5",
+     "r6",
+     "r8"
+    ],
+    "quote": "Enron will restate its financial statements from 1997 to 2000"
+   }
+  ]
+ },
+ "m19": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "Arthur Andersen",
+    "kind": "org",
+    "aliases": [
+     "Andersen",
+     "us.andersen.com"
+    ],
+    "note": "Enron's auditor",
+    "quote": "Internet Email Confidentiality Footer"
+   },
+   {
+    "ref": "r2",
+    "name": "Rick Sibery",
+    "kind": "person",
+    "aliases": [
+     "Richard A. Sibery",
+     "Rick",
+     "richard.a.sibery@us.andersen.com"
+    ],
+    "note": "Arthur Andersen",
+    "quote": "Regards,\n\n   Rick"
+   },
+   {
+    "ref": "r3",
+    "name": "Richard Sanders",
+    "kind": "person",
+    "aliases": [
+     "B. Sanders",
+     "Richard",
+     "b..sanders@enron.com"
+    ],
+    "note": "Enron litigation lawyer",
+    "quote": "Richard,\n\nThanks for meeting with Paul and I yesterday"
+   },
+   {
+    "ref": "r4",
+    "name": "Andrew Fastow",
+    "kind": "person",
+    "quote": "Andrew Fastow\n             Lea Fastow"
+   },
+   {
+    "ref": "r5",
+    "name": "Lea Fastow",
+    "kind": "person",
+    "note": "Andrew Fastow's wife",
+    "quote": "Andrew Fastow\n             Lea Fastow"
+   },
+   {
+    "ref": "r6",
+    "name": "Michael Kopper",
+    "kind": "person",
+    "note": "Fastow's deputy; ran Chewco",
+    "quote": "Michael Kopper"
+   },
+   {
+    "ref": "r7",
+    "name": "Jeff Skilling",
+    "kind": "person",
+    "quote": "Jeff Skilling"
+   },
+   {
+    "ref": "r8",
+    "name": "Sherron Watkins",
+    "kind": "person",
+    "aliases": [
+     "Sherron Smith Watkins"
+    ],
+    "quote": "Sherron Smith Watkins"
+   },
+   {
+    "ref": "r9",
+    "name": "Ben Glisan",
+    "kind": "person",
+    "quote": "Access to the office contents of Ben Glisan and Kristina\n   Mordaunt"
+   },
+   {
+    "ref": "r10",
+    "name": "Kristina Mordaunt",
+    "kind": "person",
+    "quote": "Access to the office contents of Ben Glisan and Kristina\n   Mordaunt"
+   },
+   {
+    "ref": "r11",
+    "name": "Anne Yeager",
+    "kind": "person",
+    "aliases": [
+     "Anne Yaeger"
+    ],
+    "quote": "Anne              Yeager may have maintained an LJM folder"
+   },
+   {
+    "ref": "r12",
+    "name": "LJM",
+    "kind": "org",
+    "quote": "an LJM folder"
+   },
+   {
+    "ref": "r13",
+    "name": "Ryan Siurek",
+    "kind": "person",
+    "quote": "Ryan Siurek mentioned"
+   }
+  ],
+  "links": [
+   {
+    "a": "r2",
+    "b": "r1",
+    "label": "works at",
+    "quote": "Internet Email Confidentiality Footer"
+   },
+   {
+    "a": "r1",
+    "b": "r4",
+    "label": "requested mailbox of",
+    "quote": "Latest e-mail boxes and network file folders available for"
+   },
+   {
+    "a": "r1",
+    "b": "r5",
+    "label": "requested mailbox of",
+    "quote": "Latest e-mail boxes and network file folders available for"
+   },
+   {
+    "a": "r1",
+    "b": "r6",
+    "label": "requested mailbox of",
+    "quote": "Latest e-mail boxes and network file folders available for"
+   },
+   {
+    "a": "r1",
+    "b": "r7",
+    "label": "requested mailbox of",
+    "quote": "Latest e-mail boxes and network file folders available for"
+   },
+   {
+    "a": "r1",
+    "b": "r8",
+    "label": "requested mailbox of",
+    "quote": "Latest e-mail boxes and network file folders available for"
+   },
+   {
+    "a": "r1",
+    "b": "r9",
+    "label": "wants to search office of",
+    "quote": "Access to the office contents of Ben Glisan and Kristina"
+   },
+   {
+    "a": "r1",
+    "b": "r10",
+    "label": "wants to search office of",
+    "quote": "Access to the office contents of Ben Glisan and Kristina"
+   },
+   {
+    "a": "r11",
+    "b": "r12",
+    "label": "may have kept a folder on",
+    "quote": "Yeager may have maintained an LJM folder"
+   },
+   {
+    "a": "r13",
+    "b": "r11",
+    "label": "pointed auditors to",
+    "quote": "Ryan Siurek mentioned that Anne"
+   },
+   {
+    "a": "r2",
+    "b": "r3",
+    "label": "sent document request to",
+    "quote": "This previous request (with some additions) is as follows"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-11-15",
+    "title": "Andersen asks for the mailboxes of Fastow, his wife, Skilling and Watkins",
+    "who": [
+     "r1",
+     "r4",
+     "r5",
+     "r7",
+     "r8"
+    ],
+    "quote": "Latest e-mail boxes and network file folders available for"
+   }
+  ]
+ },
+ "m20": {
+  "entities": [
+   {
+    "ref": "r1",
+    "name": "James Derrick",
+    "kind": "person",
+    "aliases": [
+     "Derrick Jr., James"
+    ],
+    "quote": "To: Derrick Jr., James"
+   },
+   {
+    "ref": "r2",
+    "name": "Susan Wadle",
+    "kind": "person",
+    "aliases": [
+     "Wadle, Susan"
+    ],
+    "note": "Enron employee",
+    "quote": "From: Wadle, Susan"
+   },
+   {
+    "ref": "r3",
+    "name": "Robert Williams",
+    "kind": "person",
+    "aliases": [
+     "Bob",
+     "C. Williams",
+     "c..williams@enron.com"
+    ],
+    "note": "Enron lawyer",
+    "quote": "Bob, please follow up"
+   },
+   {
+    "ref": "r4",
+    "name": "Chewco",
+    "kind": "org",
+    "quote": "calculations on the Chewco partnership"
+   }
+  ],
+  "links": [
+   {
+    "a": "r2",
+    "b": "r1",
+    "label": "told",
+    "quote": "I deleted the email regarding who to contact"
+   },
+   {
+    "a": "r1",
+    "b": "r3",
+    "label": "passed it to",
+    "quote": "Bob, please follow up"
+   },
+   {
+    "a": "r2",
+    "b": "r4",
+    "label": "neighbor built the model for",
+    "quote": "My neighbor developed the model or package that performed calculations on the Chewco partnership"
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-12-05",
+    "title": "Employee tells the general counsel she deleted the litigation email; her neighbor built Chewco's model",
+    "who": [
+     "r2",
+     "r1",
+     "r4"
+    ],
+    "quote": "I deleted the email regarding who to contact"
+   }
+  ]
+ }
+}

@@ -22,6 +22,8 @@ interface Ctx {
   forgetClaudeKey: () => Promise<void>;
   saveOpenAIKey: (key: string) => Promise<boolean>;
   forgetOpenAIKey: () => Promise<void>;
+  saveOpenRouterKey: (key: string) => Promise<boolean>;
+  forgetOpenRouterKey: () => Promise<void>;
   signInChatGPT: () => Promise<void>;
   signOutChatGPT: () => Promise<void>;
   publikSignIn: () => Promise<void>;
@@ -109,6 +111,12 @@ export function StudioProvider({ children }: { children: ReactNode }) {
       catch (e) { setIssue(issueOf(e)); return false; }
     },
     forgetOpenAIKey: () => run(() => call("DELETE", "openai/key")),
+    saveOpenRouterKey: async (key) => {
+      setIssue(null);
+      try { setStatus(await call<StudioStatus>("POST", "openrouter/key", { key })); return true; }
+      catch (e) { setIssue(issueOf(e)); return false; }
+    },
+    forgetOpenRouterKey: () => run(() => call("DELETE", "openrouter/key")),
     signInChatGPT: async () => {
       setIssue(null);
       const w = window.open("about:blank", "_blank"); // open now, inside the click, so pop-up blockers allow it

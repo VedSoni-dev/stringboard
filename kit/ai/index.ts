@@ -13,6 +13,7 @@ import { ALL_MODES, MODE_COPY, PUBLIK_FREE_BLURB, type AIRequest, type Mode, typ
 import { cookieOpts, isHosted, StudioError, YEAR, type Jar } from "./seal";
 import { claudeKey, claudeStatus, claudeStream } from "./claude";
 import { openaiKey, openaiStatus, openaiStream } from "./openai";
+import { openrouterKey, openrouterStatus, openrouterStream } from "./openrouter";
 import { chatgptModels, chatgptStatus, chatgptStream } from "./chatgpt";
 import { localStatus, localStream } from "./local";
 import * as publik from "./publik";
@@ -59,6 +60,7 @@ async function statusOf(m: Mode, jar: Jar, req: Request): Promise<ModeStatus> {
     switch (m) {
       case "claude": return { ...base, available: true, ...claudeStatus(jar) };
       case "openai": return { ...base, available: true, ...(await openaiStatus(jar, readModel(jar, "openai") ?? config.openai?.model)) };
+      case "openrouter": return { ...base, available: true, ...(await openrouterStatus(jar, readModel(jar, "openrouter") ?? config.openrouter?.model)) };
       case "local": {
         const s = await localStatus(readModel(jar, "local") ?? config.local?.model);
         return { ...base, available: true, ready: s.ready, detail: s.detail, models: s.models, model: s.model };
@@ -130,6 +132,12 @@ async function* answer(mode: Mode, j: Jar, req: Request, ai: AIRequest, signal: 
       const key = openaiKey(j);
       if (!key) throw new StudioError(401, "Add your OpenAI API key first.");
       yield* openaiStream(key, ai, readModel(j, "openai") ?? config.openai?.model, signal);
+      return;
+    }
+    case "openrouter": {
+      const key = openrouterKey(j);
+      if (!key) throw new StudioError(401, "Add your OpenRouter key first.");
+      yield* openrouterStream(key, ai, readModel(j, "openrouter") ?? config.openrouter?.model, signal);
       return;
     }
     case "chatgpt": yield* chatgptStream(config.app.slug, ai, readModel(j, "chatgpt") ?? config.chatgpt?.model, signal); return;

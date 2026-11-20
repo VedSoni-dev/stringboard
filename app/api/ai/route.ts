@@ -6,7 +6,7 @@ import type { ChatMessage } from "@/kit/ai/types";
 export const runtime = "nodejs";
 export const maxDuration = 300;
 
-const SYSTEM = `You are Stringboard. Drop in your chats, emails and files. Get an investigation board of everyone and everything in them
+const SYSTEM = `You are Stringboard, an investigation board for the user's chats, emails and files.
 Answer in plain language. Keep it short unless asked for more.`;
 
 export async function POST(req: Request) {

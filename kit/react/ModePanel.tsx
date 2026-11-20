@@ -12,6 +12,7 @@ const ICON: Record<Mode, ReactNode> = {
   chatgpt: <svg viewBox="0 0 24 24" aria-hidden><path d="M12 3a9 9 0 1 0 9 9" /><path d="M12 7v5l3 2" /></svg>,
   claude: <svg viewBox="0 0 24 24" aria-hidden><circle cx="8" cy="15" r="4" /><path d="M11 12l8-8M16 7l2 2M14 9l2 2" /></svg>,
   openai: <svg viewBox="0 0 24 24" aria-hidden><circle cx="8" cy="15" r="4" /><path d="M11 12l8-8M16 7l2 2M14 9l2 2" /><path d="M8 13.5v3M6.5 15h3" /></svg>,
+  openrouter: <svg viewBox="0 0 24 24" aria-hidden><path d="M3 12h5l3-6h10M11 18h10M8 12l3 6" /><circle cx="3.5" cy="12" r="1.5" /></svg>,
   publik: <svg viewBox="0 0 24 24" aria-hidden><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" /></svg>,
 };
 
@@ -112,6 +113,7 @@ function Card({ m, active }: { m: ModeStatus; active: boolean }) {
       <div className="sk-card-body">
         {m.id === "claude" && <KeyBody m={m} placeholder="sk-ant-…" label="Anthropic API key" getKey="https://console.anthropic.com/settings/keys" save={s.saveClaudeKey} forget={s.forgetClaudeKey} />}
         {m.id === "openai" && <KeyBody m={m} placeholder="sk-…" label="OpenAI API key" getKey="https://platform.openai.com/api-keys" save={s.saveOpenAIKey} forget={s.forgetOpenAIKey} />}
+        {m.id === "openrouter" && <KeyBody m={m} placeholder="sk-or-…" label="OpenRouter API key" getKey="https://openrouter.ai/settings/keys" save={s.saveOpenRouterKey} forget={s.forgetOpenRouterKey} />}
         {m.id === "chatgpt" && <ChatGPTBody m={m} />}
         {m.id === "local" && <ModelSelect m={m} />}
         {m.id === "publik" && <PublikBody m={m} />}

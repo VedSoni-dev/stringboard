@@ -24,3 +24,6 @@ body { margin: 0; font-family: var(--font-body); min-height: 100dvh; }
 /* text-wrap-style only: the text-wrap shorthand would also set the wrap mode and beat Tailwind's `truncate` */
 h1, h2, h3 { font-family: var(--font-display); letter-spacing: var(--tracking-display); text-wrap-style: balance; }
 p { text-wrap-style: pretty; }
+
+/* One container for every section: 16-24px edges on a phone, 64-104px on a desktop (the taste skill's .wrap). */
+.wrap { --edge: clamp(16px, 5vw, 104px); width: calc(100% - 2 * var(--edge)); max-width: 1312px; margin-inline: auto; }
