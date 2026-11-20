@@ -1,0 +1,8 @@
+/* theme: paper — editorial: warm off-white, ink black, a serif display face, film grain (<Grain />). For writing, reading, notes, research builds. */
+:root {
+  --bg: #f4f1ea; --bg-2: #ebe6db; --card: #fbf9f4; --fg: #1b1a17; --muted: #6e695e; --line: #d9d3c5;
+  --accent: #1b1a17; --accent-fg: #f4f1ea; --danger: #b42318; --ok: #2f6f3e;
+  --font-display: var(--font-serif), ui-serif, Georgia, serif; --tracking-display: -0.01em;
+  --radius: 4px; --radius-sm: 3px;
+  --shadow-1: none; --shadow-2: 0 1px 0 var(--line); --shadow-3: 0 18px 40px rgb(27 26 23 / .14);
+}

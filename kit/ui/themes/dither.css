@@ -1,0 +1,11 @@
+/* theme: dither — dark, one hot accent, mono labels, Bayer-dithered backdrop (<Dither />). For dev tools, AI, "hacker" builds. */
+:root {
+  --bg: #0a0a0a; --bg-2: #161616; --card: #111111; --fg: #f2f2f0; --muted: #8a8a85; --line: #262624;
+  --accent: #ff4d00; --accent-fg: #0a0a0a; --danger: #ff5c5c; --ok: #3ddc84;
+  --font-display: var(--font-mono), ui-monospace, monospace; --tracking-display: -0.02em;
+  --radius: 6px; --radius-sm: 4px;
+  --shadow-1: 0 0 0 1px rgb(255 255 255 / .04); --shadow-2: 0 0 0 1px rgb(255 255 255 / .06), 0 12px 32px rgb(0 0 0 / .5); --shadow-3: 0 0 0 1px rgb(255 255 255 / .08), 0 24px 64px rgb(0 0 0 / .6);
+  color-scheme: dark;
+}
+.sk-btn:not(.sk-btn-quiet):not(.sk-btn-chatgpt) { background: var(--accent); color: var(--accent-fg); font-family: var(--font-code); text-transform: uppercase; letter-spacing: .04em; font-size: .8rem; }
+.sk-btn:not(.sk-btn-quiet):not(.sk-btn-chatgpt):hover { background: color-mix(in oklab, var(--accent) 85%, white); }

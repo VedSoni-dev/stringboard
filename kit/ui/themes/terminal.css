@@ -1,0 +1,12 @@
+/* theme: terminal — black, phosphor green, monospace everything, faint scanlines. For CLIs, agents, infra builds. */
+:root {
+  --bg: #050605; --bg-2: #0c100c; --card: #080a08; --fg: #c8f7c5; --muted: #5f8a5c; --line: #1c2a1b;
+  --accent: #39ff6a; --accent-fg: #050605; --danger: #ff6b5b; --ok: #39ff6a;
+  --font-body: var(--font-mono), ui-monospace, monospace; --font-display: var(--font-mono), ui-monospace, monospace; --tracking-display: 0;
+  --radius: 2px; --radius-sm: 2px; --radius-pill: 2px;
+  --shadow-1: 0 0 0 1px var(--line); --shadow-2: 0 0 0 1px var(--line), 0 0 24px rgb(57 255 106 / .06); --shadow-3: 0 0 0 1px var(--line), 0 0 48px rgb(57 255 106 / .1);
+  color-scheme: dark;
+}
+body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 60; background: repeating-linear-gradient(0deg, rgb(0 0 0 / .18) 0 1px, transparent 1px 3px); }
+.sk-btn:not(.sk-btn-quiet):not(.sk-btn-chatgpt) { background: transparent; color: var(--accent); border-color: var(--accent); }
+.sk-btn:not(.sk-btn-quiet):not(.sk-btn-chatgpt):hover { background: var(--accent); color: var(--accent-fg); }

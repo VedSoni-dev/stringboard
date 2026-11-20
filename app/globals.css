@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "../kit/ui/kit.css";
+@import "../kit/ui/themes/dither.css";
+
+/* Tailwind reads the kit's tokens, so `bg-bg text-fg border-line text-muted bg-accent` all follow the theme. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-card: var(--card);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-code);
+  --ease-out: var(--ease-out);
+}
+
+html { background: var(--bg); color: var(--fg); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body { margin: 0; font-family: var(--font-body); min-height: 100dvh; }
+::selection { background: color-mix(in oklab, var(--accent) 35%, transparent); }
+/* text-wrap-style only: the text-wrap shorthand would also set the wrap mode and beat Tailwind's `truncate` */
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: var(--tracking-display); text-wrap-style: balance; }
+p { text-wrap-style: pretty; }

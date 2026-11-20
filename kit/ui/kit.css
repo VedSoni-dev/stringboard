@@ -1,0 +1,137 @@
+/* studio kit: base tokens, motion rules (docs/principles.md) and the shared components (mode picker, buttons).
+   A theme (kit/ui/themes/<name>.css) overrides the colour, type and shape tokens; motion and sizing stay the same everywhere. */
+
+:root {
+  /* colour (themes override) */
+  --bg: #fafaf9; --bg-2: #f1f1ef; --card: #ffffff; --fg: #111111; --muted: #6b6b6b; --line: #e6e6e3;
+  --accent: #ff5a1f; --accent-fg: #ffffff; --danger: #e5484d; --ok: #30a46c;
+  /* type */
+  --font-body: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
+  --font-display: var(--font-body);
+  --font-code: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  --tracking-display: -0.03em;
+  /* shape + depth (solid drawing: layered shadows, never one flat blur) */
+  --radius: 14px; --radius-sm: 10px; --radius-pill: 999px;
+  --shadow-1: 0 1px 1px rgb(0 0 0 / .04), 0 2px 4px rgb(0 0 0 / .04);
+  --shadow-2: 0 1px 1px rgb(0 0 0 / .04), 0 4px 8px rgb(0 0 0 / .05), 0 12px 24px rgb(0 0 0 / .06);
+  --shadow-3: 0 2px 2px rgb(0 0 0 / .05), 0 8px 16px rgb(0 0 0 / .08), 0 24px 48px rgb(0 0 0 / .12);
+  /* motion: snappy (≤300 ms), never linear, springs for things that land */
+  --dur-0: 0ms;      /* frequent actions: palettes, menus, toggles (law 20) */
+  --dur-1: 120ms;    /* hover, tooltips, press */
+  --dur-2: 180ms;    /* small state changes */
+  --dur-3: 260ms;    /* dialogs, cards entering */
+  --dur-page: 520ms; /* page-level entrances only */
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --ease-in: cubic-bezier(.55, 0, 1, .45);
+  /* a real spring (slight overshoot) for things that land: squash and stretch */
+  --spring: linear(0, .009, .035 2.1%, .141 4.4%, .723 12.9%, .938 16.7%, 1.017 19.4%, 1.067, 1.087 24.1%, 1.085, 1.068 28.3%, 1.01 33.9%, .993 37.5%, .986 40.6%, .997 51.5%, 1.002 59.2%, 1);
+  --stagger: 40ms;   /* follow-through: children settle after their container */
+  /* sizing */
+  --hit: 44px;       /* minimum target (law 14) */
+  --focus: 0 0 0 3px color-mix(in oklab, var(--accent) 45%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-1: 0ms; --dur-2: 0ms; --dur-3: 120ms; --dur-page: 160ms; --stagger: 0ms; --spring: var(--ease-out); }
+  *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+}
+
+/* ---------- motion utilities ---------- */
+@keyframes sk-rise { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: none; } }
+@keyframes sk-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes sk-shake { 0%,100% { transform: none; } 20% { transform: translateX(-6px); } 40% { transform: translateX(5px); } 60% { transform: translateX(-3px); } 80% { transform: translateX(2px); } }
+@keyframes sk-draw { to { stroke-dashoffset: 0; } }
+@keyframes sk-burst { 0% { opacity: .9; transform: scale(.4); } 100% { opacity: 0; transform: scale(1.6); } }
+@keyframes sk-spin { to { transform: rotate(360deg); } }
+
+.sk-rise { animation: sk-rise var(--dur-3) var(--spring) both; }
+.sk-stagger > * { animation: sk-rise var(--dur-3) var(--spring) both; }
+.sk-stagger > *:nth-child(2) { animation-delay: calc(var(--stagger) * 1); }
+.sk-stagger > *:nth-child(3) { animation-delay: calc(var(--stagger) * 2); }
+.sk-stagger > *:nth-child(4) { animation-delay: calc(var(--stagger) * 3); }
+.sk-stagger > *:nth-child(5) { animation-delay: calc(var(--stagger) * 4); }
+.sk-stagger > *:nth-child(n+6) { animation-delay: calc(var(--stagger) * 5); }
+.sk-shake { animation: sk-shake 240ms var(--ease-out); }
+.sk-tilt { transform: perspective(700px) rotateX(0) rotateY(0); transition: transform var(--dur-2) var(--ease-out), box-shadow var(--dur-2) var(--ease-out); }
+.sk-tilt:hover { transform: perspective(700px) rotateX(2deg) rotateY(-3deg) translateY(-2px); box-shadow: var(--shadow-3); }
+/* secondary action: a check that draws in + one small burst */
+.sk-flourish { position: relative; display: inline-grid; place-items: center; }
+.sk-flourish svg path { stroke-dasharray: 24; stroke-dashoffset: 24; animation: sk-draw var(--dur-3) var(--ease-out) forwards; }
+.sk-flourish::after { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid var(--ok); animation: sk-burst 420ms var(--ease-out) forwards; pointer-events: none; }
+
+/* ---------- buttons, fields ---------- */
+.sk-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: var(--hit); padding: 0 1.1rem; border-radius: var(--radius-pill); border: 1px solid transparent;
+  background: var(--fg); color: var(--bg); font: 500 .95rem/1 var(--font-body); cursor: pointer;
+  transition: transform var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out), opacity var(--dur-1) var(--ease-out);
+}
+.sk-btn:hover { background: color-mix(in oklab, var(--fg) 86%, var(--bg)); }
+.sk-btn:active { transform: scale(.97); transition-timing-function: var(--spring); }
+.sk-btn:focus-visible, .sk-pill:focus-visible, .sk-icon-btn:focus-visible { outline: none; box-shadow: var(--focus); }
+.sk-btn:disabled { opacity: .5; cursor: default; transform: none; }
+.sk-btn:has(.sk-btn-aside) { flex-wrap: wrap; column-gap: .3em; row-gap: .2rem; max-width: 100%; padding-block: .6rem; line-height: 1.2; text-align: center; white-space: normal; } /* wraps on a phone even where a build sets .sk-btn nowrap */
+.sk-btn-aside { font-weight: 400; opacity: .72; }
+.sk-btn-quiet { background: transparent; color: var(--fg); border-color: var(--line); }
+.sk-btn-quiet:hover { background: var(--bg-2); }
+.sk-btn-chatgpt { background: #0d0d0d; color: #fff; }
+.sk-btn-chatgpt:hover { background: #2a2a2a; }
+.sk-icon-btn { min-width: var(--hit); min-height: var(--hit); display: inline-grid; place-items: center; border: 0; background: transparent; color: var(--muted); font-size: 1.5rem; border-radius: var(--radius-pill); cursor: pointer; transition: background-color var(--dur-1) var(--ease-out); }
+.sk-icon-btn:hover { background: var(--bg-2); color: var(--fg); }
+.sk-link { color: var(--fg); text-underline-offset: 3px; font-size: .9rem; min-height: var(--hit); display: inline-flex; align-items: center; }
+.sk-field { display: grid; gap: .35rem; font-size: .85rem; color: var(--muted); }
+.sk-row { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.sk-stack { display: grid; gap: .75rem; justify-items: start; }
+.sk-stack > .sk-row, .sk-stack > .sk-field, .sk-stack > p { justify-self: stretch; }
+.sk-panel input, .sk-panel select {
+  min-height: var(--hit); padding: 0 .9rem; border-radius: var(--radius-sm); border: 1px solid var(--line);
+  background: var(--card); color: var(--fg); font: .95rem var(--font-body); flex: 1 1 14rem;
+  transition: border-color var(--dur-1) var(--ease-out), box-shadow var(--dur-1) var(--ease-out);
+}
+.sk-panel input:focus, .sk-panel select:focus { outline: none; border-color: var(--accent); box-shadow: var(--focus); }
+.sk-panel code, .sk-copy code { font-family: var(--font-code); font-size: .82rem; }
+.sk-muted { color: var(--muted); }
+.sk-error { color: var(--danger); background: color-mix(in oklab, var(--danger) 10%, transparent); padding: .7rem .9rem; border-radius: var(--radius-sm); margin: 0; animation: sk-shake 240ms var(--ease-out); }
+.sk-error a { color: inherit; font-weight: 600; }
+.sk-tag { display: inline-flex; align-items: center; min-height: 28px; padding: 0 .65rem; border-radius: var(--radius-pill); background: color-mix(in oklab, var(--ok) 14%, transparent); color: color-mix(in oklab, var(--ok) 70%, var(--fg)); font-size: .78rem; font-weight: 600; white-space: nowrap; }
+
+/* ---------- mode pill + dialog ---------- */
+.sk-pill { display: inline-flex; align-items: center; gap: .5rem; min-height: var(--hit); padding: 0 1rem; border-radius: var(--radius-pill); border: 1px solid var(--line); background: color-mix(in oklab, var(--card) 80%, transparent); color: var(--fg); font: 500 .88rem var(--font-body); cursor: pointer; backdrop-filter: blur(10px); transition: transform var(--dur-1) var(--ease-out), border-color var(--dur-1) var(--ease-out); }
+.sk-pill:hover { border-color: color-mix(in oklab, var(--fg) 25%, var(--line)); }
+.sk-pill:active { transform: scale(.97); }
+.sk-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+.sk-dot.is-on { background: var(--ok); box-shadow: 0 0 0 3px color-mix(in oklab, var(--ok) 25%, transparent); }
+.sk-dialog { overflow-x: hidden; margin: auto; /* Tailwind's reset zeroes the native centring */ width: min(40rem, calc(100vw - 2rem)); max-height: min(90vh, 52rem); padding: 1.25rem; border: 1px solid var(--line); border-radius: calc(var(--radius) + 6px); background: var(--bg); color: var(--fg); box-shadow: var(--shadow-3); }
+.sk-dialog[open] { animation: sk-rise var(--dur-3) var(--spring); }
+.sk-dialog::backdrop { background: rgb(0 0 0 / .45); backdrop-filter: blur(3px); animation: sk-fade var(--dur-2) var(--ease-out); }
+.sk-dialog-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .75rem; }
+.sk-dialog-head h2 { margin: 0; font: 600 1.15rem/1.2 var(--font-display); letter-spacing: var(--tracking-display); }
+
+/* ---------- cards (max 4: Hick's law) ---------- */
+.sk-panel { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; } /* a long nowrap command must not widen the grid past the dialog */
+.sk-cards { display: grid; grid-template-columns: minmax(0, 1fr); gap: .75rem; }
+.sk-cards > * { animation: sk-rise var(--dur-3) var(--spring) both; }
+.sk-cards > *:nth-child(2) { animation-delay: var(--stagger); }
+.sk-cards > *:nth-child(3) { animation-delay: calc(var(--stagger) * 2); }
+.sk-cards > *:nth-child(4) { animation-delay: calc(var(--stagger) * 3); }
+.sk-card { padding: 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); box-shadow: var(--shadow-1); transition: border-color var(--dur-2) var(--ease-out), box-shadow var(--dur-2) var(--ease-out); }
+.sk-card.is-active { border-color: color-mix(in oklab, var(--ok) 55%, var(--line)); box-shadow: var(--shadow-2); }
+.sk-card-head { display: grid; grid-template-columns: auto 1fr auto; gap: .85rem; align-items: start; }
+.sk-card-head h3 { margin: 0 0 .15rem; font: 600 1rem/1.25 var(--font-display); }
+.sk-card-head p { margin: 0; font-size: .88rem; line-height: 1.45; }
+.sk-card-icon { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--bg-2); }
+.sk-card-icon svg { width: 20px; height: 20px; fill: none; stroke: var(--fg); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.sk-card-body:not(:empty) { margin-top: .85rem; }
+.sk-detail { margin: .6rem 0 0; font-size: .85rem; color: var(--muted); }
+.sk-local { padding: .9rem 1rem; border-radius: var(--radius); border: 1px dashed var(--line); font-size: .9rem; }
+.sk-local p { margin: 0 0 .6rem; }
+.sk-copy { display: flex; align-items: center; gap: .5rem; padding: .35rem .35rem .35rem .8rem; border-radius: var(--radius-sm); background: var(--bg-2); overflow: hidden; }
+.sk-copy code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; }
+
+/* ---------- gate (first run) ---------- */
+.sk-gate { min-height: 60vh; display: grid; place-items: center; padding: 2rem 1rem; }
+.sk-gate-inner { width: min(40rem, 100%); }
+.sk-gate-title { font: 600 clamp(1.5rem, 3vw, 2rem)/1.1 var(--font-display); letter-spacing: var(--tracking-display); margin: 0 0 .4rem; }
+.sk-gate-inner > p { margin: 0 0 1.25rem; }
+.sk-spinner { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--line); border-top-color: var(--fg); animation: sk-spin 700ms linear infinite; }

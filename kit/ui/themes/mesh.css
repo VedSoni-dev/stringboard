@@ -1,0 +1,8 @@
+/* theme: mesh — light, soft drifting colour fields (<MeshGradient />), big rounded shapes. For consumer, creative, friendly builds. */
+:root {
+  --bg: #fbfaf7; --bg-2: #f2efe9; --card: rgb(255 255 255 / .78); --fg: #14110f; --muted: #6f6a63; --line: rgb(20 17 15 / .1);
+  --accent: #6d4aff; --accent-fg: #ffffff; --ok: #1f9d63;
+  --mesh-1: #ffb38a; --mesh-2: #b9a6ff; --mesh-3: #8ee6d4; --mesh-4: #fff1c9;
+  --tracking-display: -0.045em; --radius: 22px; --radius-sm: 14px;
+}
+.sk-card { backdrop-filter: blur(18px) saturate(1.2); }

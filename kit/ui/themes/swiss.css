@@ -1,0 +1,8 @@
+/* theme: swiss — white, black, one red, hairlines, a big tight grotesk. For utilities, productivity, data builds. */
+:root {
+  --bg: #ffffff; --bg-2: #f4f4f4; --card: #ffffff; --fg: #0a0a0a; --muted: #737373; --line: #e5e5e5;
+  --accent: #e10600; --accent-fg: #ffffff; --ok: #0a7d3b;
+  --tracking-display: -0.055em; --radius: 0px; --radius-sm: 0px; --radius-pill: 0px;
+  --shadow-1: none; --shadow-2: 0 0 0 1px var(--fg); --shadow-3: 8px 8px 0 var(--fg);
+}
+.sk-card { border-color: var(--fg); }

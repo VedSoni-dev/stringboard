@@ -1,0 +1,11 @@
+/* theme: glass — deep aurora backdrop (<MeshGradient /> with dark colours), frosted cards. For premium, AI-native, "wow" builds. */
+:root {
+  --bg: #07070b; --bg-2: rgb(255 255 255 / .06); --card: rgb(255 255 255 / .06); --fg: #f5f5f7; --muted: #a1a1aa; --line: rgb(255 255 255 / .1);
+  --accent: #a78bfa; --accent-fg: #0b0b10; --ok: #4ade80; --danger: #fb7185;
+  --mesh-1: #1b1045; --mesh-2: #0e3b4a; --mesh-3: #3a0f3d; --mesh-4: #07070b;
+  --tracking-display: -0.04em; --radius: 20px; --radius-sm: 12px;
+  --shadow-1: inset 0 1px 0 rgb(255 255 255 / .06); --shadow-2: inset 0 1px 0 rgb(255 255 255 / .08), 0 20px 50px rgb(0 0 0 / .45); --shadow-3: inset 0 1px 0 rgb(255 255 255 / .1), 0 30px 80px rgb(0 0 0 / .55);
+  color-scheme: dark;
+}
+.sk-card, .sk-dialog { backdrop-filter: blur(24px) saturate(1.4); }
+.sk-dialog { background: rgb(14 14 20 / .82); }
